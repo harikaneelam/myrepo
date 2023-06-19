@@ -1,0 +1,131 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+body{
+    margin: 0;
+}
+
+.navibar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color:darkslategray;
+}
+
+.navigatelist {
+    list-style: none;
+
+}
+
+.navigatelist li {
+    display: inline;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.navibar a {
+    color: #ffffff;
+}
+
+.toright {
+    text-align: right;
+    padding-right: 150px;
+    font-size: 25px !important;
+}
+
+header{
+    background-color: #747a7b31;
+    margin: 0;
+    padding: 20px;
+    color: coral;
+}
+
+header h1{
+    text-align: center;
+}
+
+header hr{
+    margin: 0 500px  20px 500px;
+    color: #ffffff;
+    border: 1px solid;
+}
+
+header p{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.bodysection{
+    margin: 50px;
+}
+
+.bodysection li{
+    font-size: 18px;
+}
+
+.resumesection{
+    margin-top: 100px;
+}
+
+.contactdetails{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contactdetails h1{
+    text-align: center;
+    color: blue;
+}
+
+.contactdetails hr{
+    margin: 0 500px  20px 500px;
+    border: 1px solid;
+}
+
+.contactdetails input{
+    padding: 15px;
+    font-size: 18px;
+    margin: 15px;
+}
+
+
+
+table{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.socialmedia h1{
+    display: inline;
+}
+
+.project-image {
+    width: 80%;
+    height: auto;
+ }
+
+ .project-table {
+    width: 50%;
+    float: left;
+ }
+
+ .project-table td {
+    padding-bottom: 20px; /* Adjust the margin value as needed */
+ }
