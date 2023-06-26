@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <title>Scientific Calculator</title>
+</head>
+<body>
+   <div class="maintab">
+      <input type="text" id = 'res'>
+      <div class="subtab">
+         <input type="button" value = 'C' onclick = "Clear()">
+         <input type="button" value = '%' onclick = "Evaluate('%')">
+         <input type="button" value = '←' onclick ="Back('←')">
+         <input type="button" value = '/' onclick = "Evaluate('/')">
+         <input type="button" value = '=' onclick = "Output('=')">
+         <br>
+         <input type="button" value = '7' onclick = "Evaluate('7')">
+         <input type="button" value = '8' onclick = "Evaluate('8')">
+         <input type="button" value = '9' onclick = "Evaluate('9')">
+         <input type="button" value = '0' onclick = "Evaluate('0')">
+         <input type="button" value = '*' onclick = "Evaluate('*')">
+         <br>
+         <input type="button" value = '4' onclick = "Evaluate('4')">
+         <input type="button" value = '5' onclick = "Evaluate('5')">
+         <input type="button" value = '6' onclick = "Evaluate('6')">
+         <input type="button" value = '00' onclick = "Evaluate('00')">
+         <input type="button" value = '-' onclick = "Evaluate('-')">
+         <br>
+         <input type="button" value = '1' onclick = "Evaluate('1')">
+         <input type="button" value = '2' onclick = "Evaluate('2')">
+         <input type="button" value = '3' onclick = "Evaluate('3')">
+         <input type="button" value = '.' onclick = "Evaluate('.')">
+         <input type="button" value = '+' onclick = "Evaluate('+')">
+         <br>
+         <input type="button" value="√" onclick="SquareRoot()">
+         <input type="button" value="sin" onclick="Sine()">
+         <input type="button" value="cos" onclick="Cosine()">
+         <input type="button" value="tan" onclick="Tangent()">
+         <input type="button" value="power" onclick="Evaluate('power')">
+         <br>
+      </div>
+   </div>
+   <script src = 'script.js' ></script>
+</body>
+</html>
