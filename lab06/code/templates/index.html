@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">Welcome to Password Check</p>
+<p style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">Let's see if your Password is secure!</p>
+<p style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">Fill out the form below with a User Name and password that have these restraints:</p>
+
+<ul style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">   
+        <li>Must have an uppercase letter somewhere.</li>
+        <li>Must have a lowercase letter somewhere.</li>
+        <li>Must have a number at the end.</li>
+    </ul>
+    <form action="/report" method="POST">
+        <label for="username" style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">Username:</label>
+        <input type="text" id="username" name="username" style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;" required>
+
+        <label for="password" style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">Password:</label>
+        <input type="password" id="password" name="password" style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;" required>
+
+        <input type="submit" value="SubmitForm" style="font-size: 1.2em; font-family: Arial, Helvetica, sans-serif;">
+    </form>
+{% endblock %}
