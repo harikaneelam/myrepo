@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Calibri;
+      background: #f0f0f0; 
+    }
+
+    .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Change this line to center the form horizontally */
+  height: 100vh;
+}
+
+    .register-form {
+      background: #fff;
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    input::placeholder {
+      font-size: 20px;
+    }
+
+    button {
+      width: 105%;
+      padding: 10px;
+      background : green; 
+      border: 1px solid #ccc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: middle;
+
+    }
+
+    button:hover {
+      background: green; 
+    }
+    
+    .font-class {
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 25px;
+    }
+    
+    .form-group.row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-group.row .input-field {
+      width: calc(50% - 15px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="register-form" action="/signup" method="POST" onsubmit="return validateForm()">
+      <h1>Register</h1>
+      <div class="font-class"><p>Create your account, it's free and only takes a minute.</p></div>
+      <div class="form-group row">
+        <div class="input-field">
+          <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+        </div>
+        <div class="input-field">
+          <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <div class="font-class">Already have an account? <a href="/signin">Sign in</a></div>
+  </div>
+
+  <script>
+    function validateForm() {
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please make sure both passwords are the same.");
+        return false;
+      }
+
+      return true; 
+    }
+  </script>
+</body>
+</html>
