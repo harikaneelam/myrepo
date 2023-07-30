@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Student Grades Database</title>
+</head>
+<body>
+    <h1>Student Grades Database</h1>
+
+    <h2>Enter a new record:</h2>
+    <form action="add_record.py" method="post">
+        Fullname: <input type="text" name="fullname" required><br>
+        Midterm#1: <input type="number" name="midterm1" required><br>
+        Midterm#2: <input type="number" name="midterm2" required><br>
+        Final Exam: <input type="number" name="final_exam" required><br>
+        <input type="submit" value="Save">
+    </form>
+
+    <h2>Display Records:</h2>
+    <form action="display_records.py" method="post">
+        <input type="submit" value="Display Records">
+    </form>
+
+    <h2>Delete a record:</h2>
+    <form action="delete_record.py" method="post">
+        Fullname: <input type="text" name="fullname" required><br>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>
